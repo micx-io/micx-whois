@@ -22,7 +22,7 @@ class WhoisFacet
         "nrw" => ["free" => "/(The queried object does not exist)/im", "nonfree"=>"/Registry Domain Id:/im", "dnscheck"=>true],
         "bayern" => ["free" => "/(The queried object does not exist)/im", "nonfree"=>"/Registry Domain Id:/im", "dnscheck"=>true],
         "ruhr" => ["free" => "/(The queried object does not exist)/im", "nonfree"=>"/Registry Domain Id:/im", "dnscheck"=>true],
-        "saarland" => ["free" => "/(The queried object does not exist)/im", "nonfree"=>"/Registry Domain Id:/im", "dnscheck"=>true],
+        "saarland" => ["free" => "/(DOMAIN NOT FOUND)/im", "nonfree"=>"/Registry Domain Id:/im", "dnscheck"=>true],
     ];
 
 

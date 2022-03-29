@@ -17,6 +17,7 @@ class DomainsTldQueryTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals(true, $q->query("wurst.org")->isRegistered);
         $this->assertEquals(true, $q->query("wurst.eu")->isRegistered);
         $this->assertEquals(true, $q->query("test.nrw")->isRegistered);
+        $this->assertEquals(true, $q->query("shop.saarland")->isRegistered);
     }
 
     public function testNotRegistered()
@@ -28,6 +29,7 @@ class DomainsTldQueryTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals(false, $q->query("wurst938774.org")->isRegistered);
         $this->assertEquals(false, $q->query("wurst938774.eu")->isRegistered);
         $this->assertEquals(false, $q->query("wurst938774.nrw")->isRegistered);
+        $this->assertEquals(false, $q->query("wurst938774.saarland")->isRegistered);
     }
 
     public function testInvalid()
