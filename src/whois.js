@@ -16,7 +16,7 @@ const MicxWhois = {
     "debug": false
   },
   query: async (domain) => {
-    let resp = await fetch(MicxWhois.attrs.endpoint_url + "&q=" + domain);
+    let resp = await fetch(MicxWhois.attrs.endpoint_url + "&q=" + encodeURIComponent(domain));
     return resp.json();
   }
 }
