@@ -1,5 +1,5 @@
-FROM ghcr.io/nfra-project/kickstart-flavor-php:unstable
-ENV DEV_CONTAINER_NAME="micx-formmailer"
+FROM ghcr.io/nfra-project/kickstart-flavor-php:8.0
+ENV DEV_CONTAINER_NAME="micx-whois"
 ENV CONFIG_PATH="/config"
 
 ADD / /opt
